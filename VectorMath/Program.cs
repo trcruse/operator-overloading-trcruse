@@ -26,10 +26,30 @@ namespace VectorMath
             Console.WriteLine($"Should not be equal: {one == two}");
 
             Console.WriteLine($"Should be equal: {one == new Vector3(3, 4, 5)}");
+
             Console.WriteLine($"Preincrement: {++one}");
+
             Console.WriteLine($"Postincrement {one++}");
 
             Console.WriteLine($"Magnitude: {~one}");
+
+            if (one)
+            {
+                Console.WriteLine($"{one} is Truthy");
+            }
+            else
+            {
+                Console.WriteLine($"{one} is Falsy");
+            }
+
+            if (Vector3.Zero)
+            {
+                Console.WriteLine($"{Vector3.Zero} is Truthy");
+            }
+            else
+            {
+                Console.WriteLine($"{Vector3.Zero} is Falsy");
+            }
 
 
         }

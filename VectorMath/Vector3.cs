@@ -85,5 +85,16 @@ namespace VectorMath
             return Math.Sqrt(a.X * a.X + a.Y * a.Y + a.Z + a.Z);
         }
 
+        public static Vector3 Zero = new Vector3(0, 0, 0);
+
+        public static bool operator true(Vector3 a)
+        {
+            return Zero != a;
+        }
+        public static bool operator false(Vector3 a)
+        {
+            return Zero == a;
+        }
+
     }
 }
